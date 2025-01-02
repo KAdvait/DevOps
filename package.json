@@ -1,0 +1,8 @@
+{
+  "name":"node-exmaple",
+  "version": "1.0.0",
+  "scripts" {
+    "test": "echo 'Runnng NodeJS tests' && exit 0"
+  }
+}
+  
