@@ -1,0 +1,19 @@
+name: Example 1
+
+on: 
+  push:
+    branches: master
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: print
+        run: echo "hello"
+
+      - name: Update
+        run: |
+          sudo apt update
