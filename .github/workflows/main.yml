@@ -16,10 +16,10 @@ jobs:
         run: lsb_release -cs
 
       - name: Clone
-        run: git clone https://${{secrets.GH_PAT}}@github.com/Assetcues-Solutions-Private-Limited/AssetcuesWebApiAccessPanelServices.git /root/ACP/
+        run: git clone https://${{secrets.GH_PAT}}@github.com/Assetcues-Solutions-Private-Limited/AssetcuesWebApiAccessPanelServices.git
 
       - name: Verify
-        run: ll /root/ACP
+        run: ll AssetcuesWebApiAccessPanelServices
         
       - name: whoami
         run: whoami
