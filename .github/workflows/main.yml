@@ -19,7 +19,7 @@ jobs:
         run: git clone https://${{secrets.GH_PAT}}@github.com/Assetcues-Solutions-Private-Limited/AssetcuesWebApiAccessPanelServices.git
 
       - name: Verify
-        run: ll AssetcuesWebApiAccessPanelServices
+        run: ls -al AssetcuesWebApiAccessPanelServices
         
       - name: whoami
         run: whoami
