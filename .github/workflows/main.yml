@@ -15,9 +15,12 @@ jobs:
       - name: lsb-release
         run: lsb_release -cs
 
-      - name: Secret
-        run: echo ${{secrets.TES_SECRET}}
+      - name: Clone
+        run: git clone https://${{secrets.GH_PAT}}@github.com/Assetcues-Solutions-Private-Limited/AssetcuesWebApiAccessPanelServices.git /root/ACP/
 
+      - name: Verify
+        run: ll /root/ACP
+        
       - name: whoami
         run: whoami
 
