@@ -6,7 +6,7 @@ on:
       - master
 env:
   gh_pat: ${{secrets.GH_PAT}}
-  test: ${{secrests.TES_SECRET}}
+  test: ${{secrets.TES_SECRET}}
   
 jobs:
   hello:
