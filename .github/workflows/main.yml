@@ -16,11 +16,8 @@ jobs:
         run: lsb_release -cs
 
       - name: Secret
-        run: echo {{secrets.TES_SECRET}}
+        run: echo ${{secrets.TES_SECRET}}
 
       - name: whoami
         run: whoami
 
-      - name: mkdir
-        run: mkdir /home/kadvait/test-folder
-      
